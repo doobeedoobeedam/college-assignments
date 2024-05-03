@@ -1,4 +1,4 @@
-// Kusuma Wecitra (048718076)
+// Kusuma Wecitra
 
 import java.util.LinkedList;
 
