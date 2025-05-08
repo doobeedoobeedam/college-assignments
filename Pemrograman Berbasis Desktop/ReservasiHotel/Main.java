@@ -46,6 +46,9 @@ public class Main {
             }
         }
 
+        System.out.println("\n- STATUS KAMAR SETELAH PEMESANAN -");
+        tampilkanKamar();
+
         cetakStruk(jumlahPesan);
     }
 
