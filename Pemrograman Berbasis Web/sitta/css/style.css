@@ -1,0 +1,252 @@
+:root {
+  --warna-utama: #005A9C;
+  --warna-sekunder: #FFD700;
+  --warna-teks: #333;
+  --warna-putih: #ffffff;
+  --warna-bg: #f4f7f6;
+  --warna-border: #ddd;
+  --warna-error: #D8000C;
+  --warna-sukses: #4F8A10;
+  --bayangan: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', 'Helvetica', sans-serif;
+}
+
+body {
+  background-color: var(--warna-bg);
+  color: var(--warna-teks);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: var(--warna-putih);
+  border-radius: 8px;
+  box-shadow: var(--bayangan);
+}
+
+/* Navigasi */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--warna-utama);
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--warna-putih);
+  text-decoration: none;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar .nav-links a {
+  color: var(--warna-putih);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover,
+.navbar .nav-links a.active {
+  color: var(--warna-sekunder);
+  border-bottom: 2px solid var(--warna-sekunder);
+  padding-bottom: 5px;
+}
+
+/* Formulir */
+
+.form-grup {
+  margin-bottom: 1.2rem;
+}
+
+.form-grup label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-grup input[type="text"],
+.form-grup input[type="email"],
+.form-grup input[type="password"],
+.form-grup input[type="number"],
+.form-grup select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--warna-border);
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--warna-utama);
+  color: var(--warna-putih);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #004a80;
+}
+
+.btn-sekunder {
+  background-color: #6c757d;
+}
+
+.btn-sekunder:hover {
+  background-color: #5a6268;
+}
+
+.btn-danger {
+  background-color: var(--warna-error);
+}
+
+.btn-danger:hover {
+  background-color: #b2000a;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.link-button {
+  background: none;
+  border: none;
+  color: var(--warna-utama);
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 0.9rem;
+  padding: 0;
+}
+
+.link-button:hover {
+  color: #004a80;
+}
+
+/* Alert */
+
+.alert {
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  display: none;
+}
+
+.alert-error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.alert-sukses {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+/* Modal */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 25px;
+  border: 1px solid #888;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.close-btn {
+  color: #aaa;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: black;
+  text-decoration: none;
+}
+
+/* Tabel */
+
+.tabel-data {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: var(--bayangan);
+  overflow-x: auto;
+}
+
+.tabel-data th,
+.tabel-data td {
+  border: 1px solid var(--warna-border);
+  padding: 12px;
+  text-align: left;
+}
+
+.tabel-data th {
+  background-color: var(--warna-utama);
+  color: var(--warna-putih);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.tabel-data tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.tabel-data tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.tabel-data td img {
+  width: 60px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+}
