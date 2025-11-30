@@ -1,0 +1,687 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+#app {
+  max-width: 1000px;
+  margin: 30px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav button {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  background: #ddd;
+  margin-right: 5px;
+}
+
+nav button.active {
+  background: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+/* Table */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.status-cell {
+    position: relative;
+    cursor: help;
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    bottom: 120%; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    width: max-content;
+    max-width: 200px;
+    z-index: 100;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    text-align: center;
+    line-height: 1.4;
+}
+
+.tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+}
+
+/* Saat .status-cell di-hover, maka .tooltip muncul */
+.status-cell:hover .tooltip {
+    display: block;
+}
+
+/* Forms */
+.form-box {
+  background: #e9ecef;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.form-row {
+  margin-bottom: 10px;
+}
+
+.form-row label {
+  display: inline-block;
+  width: 120px;
+}
+
+.controls {
+  margin-bottom: 15px;
+  padding: 10px;
+  background: #f9f9f9;
+  border: 1px solid #eee;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-left: 5px solid #007bff;
+}
+
+.btn-danger {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.container.card.text-center {
+  max-width: 500px;
+  margin-top: 40px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 24px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #34495e;
+  margin-bottom: 16px;
+}
+
+.subtitle-desc {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 24px;
+}
+
+.mb-4 {
+  margin-bottom: 16px;
+}
+
+.mb-6 {
+  margin-bottom: 24px;
+}
+
+.mb-8 {
+  margin-bottom: 32px;
+}
+
+.mt-4 {
+  margin-top: 16px;
+}
+
+.mt-6 {
+  margin-top: 24px;
+}
+
+.mt-3 {
+  margin-top: 12px;
+}
+
+.ml-2 {
+  margin-left: 8px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.nav-back {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav-back:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background-color: #3498db;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #2980b9;
+}
+
+.btn-secondary {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #27ae60;
+}
+
+.btn-success {
+  background-color: #27ae60;
+  color: white;
+}
+
+.btn-success:hover {
+  background-color: #229954;
+}
+
+.btn-muted {
+  background-color: #f0f0f0;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+.btn-muted:hover {
+  background-color: #e0e0e0;
+}
+
+.btn-link {
+  background: none;
+  border: none;
+  color: #3498db;
+  cursor: pointer;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.btn-link:hover {
+  text-decoration: underline;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.main-nav .btn {
+  width: 100%;
+}
+
+.form-layout {
+  border: 1px solid #e0e0e0;
+}
+
+.form-grid-2,
+.form-grid-3 {
+  display: grid;
+  gap: 16px;
+}
+
+.form-grid-2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.form-grid-3 {
+  grid-template-columns: 1fr;
+}
+
+.form-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.form-input,
+.form-select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.form-input[readonly] {
+  background-color: #f4f4f4;
+  cursor: not-allowed;
+  color: #555;
+}
+
+.form-checkbox {
+  width: 16px;
+  height: 16px;
+  accent-color: #3498db;
+  margin-right: 8px;
+  position: relative;
+  top: 2px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.filter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+  align-items: flex-end;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+
+.checkbox-group label {
+  line-height: 1.3;
+  cursor: pointer;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flex-end .btn {
+  width: 100%;
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  padding: 0;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table th,
+.data-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+  vertical-align: top;
+  font-size: 14px;
+}
+
+.data-table th {
+  background-color: #f9f9f9;
+  font-size: 12px;
+  font-weight: 700;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.data-table th.sortable {
+  cursor: pointer;
+}
+
+.data-table th.sortable:hover {
+  background-color: #f0f0f0;
+}
+
+.data-table th.sortable span {
+  font-size: 10px;
+  display: inline-block;
+  width: 10px;
+  color: #3498db;
+}
+
+.data-table tr:last-child td {
+  border-bottom: none;
+}
+
+.data-table tr:hover {
+  background-color: #fcfcfc;
+}
+
+.item-title {
+  font-weight: 600;
+  color: #333;
+}
+
+.item-subtitle {
+  font-size: 13px;
+  color: #777;
+  margin-top: 2px;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 99px;
+  line-height: 1.4;
+}
+
+.status-aman {
+  background-color: #e6f7ec;
+  color: #0d6b31;
+}
+
+.status-menipis {
+  background-color: #fff8e1;
+  color: #935a00;
+}
+
+.status-kosong {
+  background-color: #feeeee;
+  color: #c00;
+}
+
+.modal-overlay {
+  position: fixed;
+  z-index: 10;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  width: 100%;
+  overflow: hidden;
+  animation: modal-fade-in 0.3s ease;
+}
+
+@keyframes modal-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.modal-header {
+  padding: 16px 24px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.modal-header h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.modal-body {
+  padding: 24px;
+}
+
+.modal-footer {
+  padding: 16px 24px;
+  border-top: 1px solid #e0e0e0;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.input-group {
+  display: flex;
+}
+
+.input-group .form-input {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  flex-grow: 1;
+}
+
+.input-group .btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border: 1px solid #ccc;
+  border-left: 0;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.detail-list {
+  list-style: disc;
+  list-style-position: inside;
+  background-color: #f9f9f9;
+  padding: 12px 16px;
+  border-radius: 6px;
+  border: 1px solid #eee;
+  font-size: 14px;
+  margin: 0;
+}
+
+.search-box {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.search-box .form-input {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  flex-grow: 1;
+}
+
+.search-box .btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.tracking-result h3 {
+  font-size: 18px;
+  font-weight: 600;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
+}
+
+.tracking-details {
+  padding: 16px;
+  background-color: #fcfcfc;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  margin-top: 12px;
+}
+
+.tracking-details p {
+  margin: 8px 0;
+}
+
+.status-tracking {
+  font-weight: 700;
+  color: #3498db;
+}
+
+.riwayat-item {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 4px;
+}
+
+.riwayat-item span {
+  color: #888;
+}
+
+.alert {
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin-top: 16px;
+  font-weight: 600;
+}
+
+.alert-error {
+  background-color: #feeeee;
+  border: 1px solid #c00;
+  color: #c00;
+}
+
+@media (min-width: 768px) {
+  .form-grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .form-span-2 {
+    grid-column: span 2;
+  }
+
+  .form-span-3 {
+    grid-column: span 3;
+  }
+
+  .form-span-2-lg {
+    grid-column: span 2;
+  }
+
+  .flex-end .btn {
+    width: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .data-table {
+    border: 0;
+  }
+
+  .data-table thead {
+    display: none;
+  }
+
+  .data-table tr {
+    display: block;
+    margin-bottom: 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+
+  .data-table td {
+    display: block;
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .data-table td:last-child {
+    border-bottom: 0;
+  }
+
+  .data-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 16px;
+    width: calc(50% - 32px);
+    text-align: left;
+    font-weight: 700;
+    color: #555;
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+
+  .modal-content {
+    margin: 10px;
+  }
+
+  .filter-grid {
+    gap: 16px;
+  }
+}
